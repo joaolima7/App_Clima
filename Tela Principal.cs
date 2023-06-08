@@ -70,6 +70,15 @@ namespace APP_CLIMA
 
                 if (weatherData != null)
                 {
+                    Lbl_City.Visible = true;
+                    Lbl_Temper.Visible = true;
+                    Lbl_Umid.Visible = true;
+                    Lbl_Vento.Visible = true;
+                    pictureBox1.Visible = true;
+                    pictureBox2.Visible = true;
+                    pictureBox3.Visible = true;
+                    pictureBox4.Visible = false;
+
                     Lbl_Temper.Text = $"{weatherData.Main.Temp}°C";
                     Lbl_Umid.Text = $"{weatherData.Main.Humidity}%";
                     Lbl_Vento.Text = $"{weatherData.Wind.Speed} m/s";
@@ -81,16 +90,33 @@ namespace APP_CLIMA
                 }
                 else
                 {
-                    Lbl_Temper.Text = "Falha ao obter dados.";
-                    Lbl_Umid.Text = "";
-                    Lbl_Vento.Text = "";
-                    Lbl_City.Text = "";
+                    Lbl_City.Visible = true;
+                    Lbl_City.Text = "Erro, tente novamente!";
                 }
             }
             else
             {
-                MessageBox.Show("Digite o nome da cidade.");
+                Txb_Pesq.BackColor = Color.IndianRed;
+                Lbl_Digite.Visible = true;
             }
+        }
+
+        private void Tela_Principal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Txb_Pesq.Focus())
+                {
+                    Btn_Pesq.PerformClick();
+                    Lbl_City.Focus();
+                }
+            }
+        }
+
+        private void Txb_Pesq_TextChanged(object sender, EventArgs e)
+        {
+            Txb_Pesq.BackColor = Color.LightGray;
+            Lbl_Digite.Visible = false;
         }
     }
 }

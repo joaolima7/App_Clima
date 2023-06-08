@@ -63,6 +63,16 @@ namespace APP_CLIMA.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dia_nublado {
+            get {
+                object obj = ResourceManager.GetObject("dia-nublado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_andre_moura_3289880 {
             get {
                 object obj = ResourceManager.GetObject("pexels-andre-moura-3289880", resourceCulture);
