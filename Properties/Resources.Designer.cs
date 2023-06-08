@@ -93,9 +93,29 @@ namespace APP_CLIMA.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap umidade__1_ {
+            get {
+                object obj = ResourceManager.GetObject("umidade (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vento {
             get {
                 object obj = ResourceManager.GetObject("vento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vento__1_ {
+            get {
+                object obj = ResourceManager.GetObject("vento (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

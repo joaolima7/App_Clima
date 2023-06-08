@@ -48,7 +48,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = Color.LightGray;
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
@@ -64,28 +64,28 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(78, 45);
+            pictureBox3.Location = new Point(74, 45);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(78, 69);
+            pictureBox3.Size = new Size(84, 73);
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.umidade;
-            pictureBox2.Location = new Point(158, 210);
+            pictureBox2.Image = Properties.Resources.umidade__1_;
+            pictureBox2.Location = new Point(158, 219);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
+            pictureBox2.Size = new Size(28, 28);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.vento;
-            pictureBox1.Location = new Point(44, 210);
+            pictureBox1.Image = Properties.Resources.vento__1_;
+            pictureBox1.Location = new Point(44, 219);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.Size = new Size(28, 28);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -93,7 +93,7 @@
             // Lbl_Umid
             // 
             Lbl_Umid.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Lbl_Umid.Location = new Point(128, 243);
+            Lbl_Umid.Location = new Point(128, 248);
             Lbl_Umid.Name = "Lbl_Umid";
             Lbl_Umid.Size = new Size(89, 28);
             Lbl_Umid.TabIndex = 4;
@@ -103,7 +103,7 @@
             // Lbl_Vento
             // 
             Lbl_Vento.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Lbl_Vento.Location = new Point(14, 243);
+            Lbl_Vento.Location = new Point(14, 248);
             Lbl_Vento.Name = "Lbl_Vento";
             Lbl_Vento.Size = new Size(89, 28);
             Lbl_Vento.TabIndex = 3;
@@ -112,8 +112,8 @@
             // 
             // Lbl_Descricao
             // 
-            Lbl_Descricao.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Lbl_Descricao.Location = new Point(3, 165);
+            Lbl_Descricao.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Lbl_Descricao.Location = new Point(3, 182);
             Lbl_Descricao.Name = "Lbl_Descricao";
             Lbl_Descricao.Size = new Size(226, 28);
             Lbl_Descricao.TabIndex = 2;
@@ -122,10 +122,10 @@
             // 
             // Lbl_Temper
             // 
-            Lbl_Temper.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Lbl_Temper.Location = new Point(3, 117);
+            Lbl_Temper.Font = new Font("Times New Roman", 30F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Lbl_Temper.Location = new Point(0, 121);
             Lbl_Temper.Name = "Lbl_Temper";
-            Lbl_Temper.Size = new Size(226, 37);
+            Lbl_Temper.Size = new Size(226, 56);
             Lbl_Temper.TabIndex = 1;
             Lbl_Temper.Text = "Temp";
             Lbl_Temper.TextAlign = ContentAlignment.MiddleCenter;
@@ -142,7 +142,7 @@
             // 
             // Txb_Pesq
             // 
-            Txb_Pesq.BackColor = SystemColors.ActiveCaption;
+            Txb_Pesq.BackColor = Color.LightGray;
             Txb_Pesq.Location = new Point(165, 379);
             Txb_Pesq.Name = "Txb_Pesq";
             Txb_Pesq.Size = new Size(198, 23);
@@ -150,7 +150,7 @@
             // 
             // Btn_Pesq
             // 
-            Btn_Pesq.BackColor = SystemColors.ActiveCaption;
+            Btn_Pesq.BackColor = Color.LightGray;
             Btn_Pesq.Image = Properties.Resources.procurar__1_;
             Btn_Pesq.Location = new Point(364, 377);
             Btn_Pesq.Name = "Btn_Pesq";
@@ -174,7 +174,7 @@
             MaximizeBox = false;
             Name = "Tela_Principal";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "iTempo";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

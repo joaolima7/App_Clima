@@ -71,8 +71,8 @@ namespace APP_CLIMA
                 if (weatherData != null)
                 {
                     Lbl_Temper.Text = $"{weatherData.Main.Temp}°C";
-                    Lbl_Umid.Text = $"Umidade: {weatherData.Main.Humidity}%";
-                    Lbl_Vento.Text = $"Vento: {weatherData.Wind.Speed} m/s";
+                    Lbl_Umid.Text = $"{weatherData.Main.Humidity}%";
+                    Lbl_Vento.Text = $"{weatherData.Wind.Speed} m/s";
                     Lbl_City.Text = $"{weatherData.Name}";
                     Lbl_Descricao.Text = $"{weatherData.Weather[0].Description}";
                     Lbl_Descricao.Text = Lbl_Descricao.Text.ToUpper();
