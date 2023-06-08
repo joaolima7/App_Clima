@@ -1,6 +1,6 @@
 ﻿namespace APP_CLIMA
 {
-    partial class Form1
+    partial class Tela_Principal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Principal));
+            panel1 = new Panel();
             SuspendLayout();
             // 
-            // Form1
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Location = new Point(165, 87);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(232, 290);
+            panel1.TabIndex = 0;
+            // 
+            // Tela_Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(439, 475);
-            Name = "Form1";
+            BackgroundImage = Properties.Resources.pexels_andre_moura_3289880;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(560, 478);
+            Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            KeyPreview = true;
+            MaximizeBox = false;
+            Name = "Tela_Principal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
     }
 }

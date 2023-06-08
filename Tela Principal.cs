@@ -4,9 +4,9 @@ using Newtonsoft.Json;
 
 namespace APP_CLIMA
 {
-    public partial class Form1 : Form
+    public partial class Tela_Principal : Form
     {
-        public Form1()
+        public Tela_Principal()
         {
             InitializeComponent();
         }
